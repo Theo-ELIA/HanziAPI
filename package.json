@@ -1,0 +1,26 @@
+{
+  "name": "hanzi_api",
+  "version": "1.0.0",
+  "description": "An API to fetch and filter Hanzi/Kanji",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Theo-ELIA/HanziAPI.git"
+  },
+  "author": "Theo ELIA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Theo-ELIA/HanziAPI/issues"
+  },
+  "homepage": "https://github.com/Theo-ELIA/HanziAPI#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "superagent": "^3.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

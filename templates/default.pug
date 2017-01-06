@@ -1,0 +1,29 @@
+html
+	head
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous")
+		title= "Chinese Hanzi"
+	body
+		h1= title
+		table(class="table table-hover")
+			tr
+				th Hanzi
+				th Pinyin
+				th English translation
+				th Traditional variant
+				th Number of strokes
+				th frequency
+			tr
+			each hanziObject in hanziListObject
+				tr
+					td(style="font-size: 250%;")= hanziObject.string
+					td
+						ul
+							each pinyin in hanziObject.kMandarin
+								li= pinyin
+					td= hanziObject.kDefinition
+					td
+						ul(class="list-inline")
+							each traditionalVariant in hanziObject.kTraditionalVariant
+								li(style="font-size: 250%;")= traditionalVariant
+					td= hanziObject.kTotalStrokes
+					td= hanziObject.kFrequency
